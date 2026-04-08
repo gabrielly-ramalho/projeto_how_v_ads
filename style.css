@@ -1,0 +1,310 @@
+body {
+    background-color:#e4c26cd0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+      background-color: #222;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+nav {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    nav a {
+      color:#e4c26cd0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+        padding: 80px 20px;
+        margin-top: 60px;
+    }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+      display: flex;
+      align-items: flex-start; /* alinha topo da janela e logo */
+
+      gap: 100px; /* espaço entre a janela e a logo */
+      min-height: 100vh;
+    }
+
+
+
+
+.janela {
+     width: 600px;
+     height: 650px; 
+     aspect-ratio: 4/3;
+      background: url('fotohome.jpg') center/cover no-repeat;
+      border: 1px solid black; 
+      /* topo arredondado */
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+
+      /* laterais e base retas */
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+
+    /* Logo ao lado */
+.logo {
+
+        display: flex;
+        flex-direction: column; /* 👈 ISSO resolve */
+        align-items: center;    /* centraliza */
+        gap: 2px;              /* espaço entre logo e frase */
+        padding: 10px;
+}
+
+    .logo img {
+      width: 500px; /* tamanho da logo */
+      height: auto;
+      display: block;
+    }
+
+
+    .logo p  {
+    margin: 0;
+    font-size: 35px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    }
+
+    .logo h1  {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    }
+
+
+#servicos {
+  text-align: center;
+  padding: 60px;
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+/* organiza os itens lado a lado */
+.lista-servicos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* quebra linha em telas menores */
+}
+
+/* cada serviço */
+.servico {
+  text-align: center;
+}
+
+/* imagem redonda */
+.servico img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* 👈 deixa redondo */
+  object-fit: cover;  /* evita distorção */
+  border: 3px solid black /* opcional dourado */
+}
+
+
+/* texto */
+.servico p {
+  margin-top: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+#localizacao {
+  text-align: center;
+  min-height: auto;
+  padding: 60px 20px;
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+
+#contato {
+  padding: 20px;
+  text-align: center;
+  color:black;
+}
+
+#contato h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.card-contato {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.info p {
+  font-size: 20px;
+  margin: 10px 0;
+  color:white;
+}
+
+/* botão whatsapp */
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e4c26cd0;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+.frase{
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#sobre{
+
+  padding: 20px;
+  text-align: center;
+  color:black;
+  
+}
+
+#containersobre{
+  display: flex;               /* coloca foto e texto lado a lado */
+  justify-content: center;     
+  align-items: flex-start;     
+  gap: 50px;
+}
+
+
+#sobre h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+#sobre h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  text-align: left 
+}
+
+
+#fotosobre {
+     width: 50%;
+     height: 550px; 
+     max-width: 500px;
+     aspect-ratio: 4/3; 
+      background: url('foto1sobre.png') center/cover no-repeat;
+      border: 1px solid black; 
+      /* topo arredondado */
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+
+      /* laterais e base retas */
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+#textsobre {
+    font-size: 30px;
+    margin: 10px 0;
+    width: 45%;
+    color:black;
+    display: flex;
+    flex-direction: column; /* 👈 ISSO resolve */
+    gap: 2px;              /* espaço entre logo e frase */
+    font-style: italic;
+       
+    
+}
+
+
+#textavalia{
+    font-size: 30px;
+    margin: 10px 0;
+    width: 45%;
+    color:black;
+    display: flex;
+    flex-direction: column; /* 👈 ISSO resolve */
+    gap: 2px;              /* espaço entre logo e frase */
+    font-style: italic;
+}
+
+#containeravalia{
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+  gap: 20px;
+  padding: 20px;
+
+
+}
+
+.card-avaliacao {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#avaliah2 h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+   
+}
+
+
+#rodape {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 60px;
+  font-size: 14px;
+}
